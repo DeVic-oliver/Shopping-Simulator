@@ -5,7 +5,7 @@ namespace Assets.Scripts.Player
     public class PlayerMovement : MonoBehaviour
     {
 
-        [SerializeField] private Rigidbody2D _playerObjectTransform;
+        [SerializeField] private Rigidbody2D _playerMainRigidbody;
         [SerializeField] private float _speed = 15f;
 
         private Vector2 _position;
@@ -30,7 +30,7 @@ namespace Assets.Scripts.Player
 
         private void FixedUpdate()
         {
-            _playerObjectTransform.MovePosition(_position);
+            _playerMainRigidbody.MovePosition(_position);
         }
     }
 }
