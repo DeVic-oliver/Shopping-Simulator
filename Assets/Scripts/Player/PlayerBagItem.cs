@@ -6,7 +6,7 @@
     
     public class PlayerBagItem : Item
     {
-        [SerializeField] private PlayerItemEquipGateway _equipGateway;
+        public PlayerItemEquipGateway EquipGateway;
       
 
         public void EquipItem()
