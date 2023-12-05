@@ -38,7 +38,7 @@
             }
             else
             {
-                _outfitController = null;
+                _outfitController.runtimeAnimatorController = null;
                 _outfit.SetActive(false);
             }
         }
