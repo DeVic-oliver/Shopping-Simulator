@@ -10,9 +10,12 @@
 
         void Update()
         {
-            _animator.SetBool("isMoving", _movement.IsMoving);
-            _animator.SetFloat("moveX", _movement.HorizontalAxisValue);
-            _animator.SetFloat("moveY", _movement.VerticalAxisValue);
+            if(_animator.runtimeAnimatorController != null)
+            {
+                _animator.SetBool("isMoving", _movement.IsMoving);
+                _animator.SetFloat("moveX", _movement.HorizontalAxisValue);
+                _animator.SetFloat("moveY", _movement.VerticalAxisValue);
+            }
         }
     }
 }
