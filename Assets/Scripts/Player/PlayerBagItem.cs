@@ -8,21 +8,15 @@
     {
         [SerializeField] private PlayerItemEquipGateway _equipGateway;
       
-        private bool _isEquipped;
 
-
-        public void ToggleEquipment()
+        public void EquipItem()
         {
-            if(!_isEquipped) 
-            { 
-                _isEquipped = true;
-                _equipGateway.EquipItem(ItemData);
-            }
-            else
-            {
-                _isEquipped = false;
-                _equipGateway.UnequipItem(ItemData);
-            }
+            EquipGateway.EquipItem(ItemData);
+        }
+
+        public void UnequipItem()
+        {
+            EquipGateway.UnequipItem(ItemData);
         }
 
         void Start()
