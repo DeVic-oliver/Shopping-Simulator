@@ -4,6 +4,10 @@ namespace Assets.Scripts.Player
 
     public class PlayerMovement : MonoBehaviour
     {
+        public float HorizontalAxisValue { get; private set; }
+        public float VerticalAxisValue { get; private set;}
+        public bool IsMoving { get; private set; }
+
         [SerializeField] private Rigidbody2D _playerMainRigidbody;
         [SerializeField] private float _speed = 15f;
 
@@ -17,13 +21,23 @@ namespace Assets.Scripts.Player
 
         void Update()
         {
+            HorizontalAxisValue = Input.GetAxis("Horizontal");
+            VerticalAxisValue = Input.GetAxis("Vertical");
+            
+            SetIsMoving();
+            
             SetPositionByAxis();
+        }
+
+        private void SetIsMoving()
+        {
+            IsMoving = (HorizontalAxisValue != 0 || VerticalAxisValue != 0);
         }
 
         private void SetPositionByAxis()
         {
-            float x = GetMovespeedTimesDeltaTime() * Input.GetAxis("Horizontal");
-            float y = GetMovespeedTimesDeltaTime() * Input.GetAxis("Vertical");
+            float x = GetMovespeedTimesDeltaTime() * HorizontalAxisValue;
+            float y = GetMovespeedTimesDeltaTime() * VerticalAxisValue;
             _position = transform.position + new Vector3(x, y, 0);
         }
 
