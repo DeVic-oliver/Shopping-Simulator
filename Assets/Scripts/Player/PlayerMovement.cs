@@ -4,12 +4,16 @@ namespace Assets.Scripts.Player
 
     public class PlayerMovement : MonoBehaviour
     {
-
         [SerializeField] private Rigidbody2D _playerMainRigidbody;
         [SerializeField] private float _speed = 15f;
 
         private Vector2 _position;
 
+
+        private void Start()
+        {
+            _position = transform.position;
+        }
 
         void Update()
         {
