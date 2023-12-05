@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 8012129154165474523}
   - component: {fileID: 7163689148395945217}
   m_Layer: 0
-  m_Name: Hair
+  m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,3 +282,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97e9d08f7609dc843a2ba48d8bd84928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnPlayerDetected:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerInteraction:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerOutDetection:
+    m_PersistentCalls:
+      m_Calls: []
+  _interactionKey: 0
