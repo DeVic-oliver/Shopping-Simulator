@@ -7,7 +7,7 @@
     [RequireComponent(typeof(PlayerItemEquipGateway))]    
     public class PlayerBag : MonoBehaviour
     {
-        public static int PlayerMoney { get; private set; }
+        public static float PlayerMoney { get; private set; }
         public static bool IsShopping { get; private set; }
 
         [SerializeField] private int _money = 200;
@@ -22,6 +22,15 @@
             IsShopping = value;
         }
 
+        public void IncreasePlayerMoneyByItemSellPrice(float price)
+        {
+            PlayerMoney += price;
+        }
+
+        public void DecreasePlayerMoneyByItemSellPrice(float price)
+        {
+            PlayerMoney -= price;
+        }
 
         public void InsertItemIntoBag(SCO_Item itemData)
         {
