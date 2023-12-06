@@ -1,8 +1,10 @@
 ﻿namespace Assets.Scripts.Player
 {
     using Assets.Scripts.ScriptableObjects;
+    using System.Collections.Generic;
     using TMPro;
     using UnityEngine;
+    using UnityEngine.UI;
 
     [RequireComponent(typeof(PlayerItemEquipGateway))]    
     public class PlayerBag : MonoBehaviour
