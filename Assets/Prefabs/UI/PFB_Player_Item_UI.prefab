@@ -282,7 +282,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 865076340826146972, guid: a8c70c38bb55abe49bb9d0dd90190a3c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 865076340826146972, guid: a8c70c38bb55abe49bb9d0dd90190a3c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -291,18 +291,18 @@ PrefabInstance:
     - target: {fileID: 865076340826146972, guid: a8c70c38bb55abe49bb9d0dd90190a3c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 8753030433207991187}
+      objectReference: {fileID: 6602488331088611344}
     - target: {fileID: 865076340826146972, guid: a8c70c38bb55abe49bb9d0dd90190a3c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 865076340826146972, guid: a8c70c38bb55abe49bb9d0dd90190a3c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EquipItem
+      value: Play
       objectReference: {fileID: 0}
     - target: {fileID: 865076340826146972, guid: a8c70c38bb55abe49bb9d0dd90190a3c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Assets.Scripts.Player.PlayerBagItem, Assembly-CSharp
+      value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 865076340826146972, guid: a8c70c38bb55abe49bb9d0dd90190a3c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -485,5 +485,10 @@ MonoBehaviour:
 --- !u!224 &6460735952119540094 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 942136408860306105, guid: a8c70c38bb55abe49bb9d0dd90190a3c, type: 3}
+  m_PrefabInstance: {fileID: 6105193397142324167}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &6602488331088611344 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1088394652832779223, guid: a8c70c38bb55abe49bb9d0dd90190a3c, type: 3}
   m_PrefabInstance: {fileID: 6105193397142324167}
   m_PrefabAsset: {fileID: 0}
