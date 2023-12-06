@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cbfd241cbf4ed342bd849de68ada276, type: 3}
   m_Name: SCO_Cleric_Outfit
   m_EditorClassIdentifier: 
+  Type: 0
   Sprite: {fileID: 21300000, guid: d77e2fc9f9055f145b760bace3bb1003, type: 3}
-  Color: {r: 1, g: 1, b: 1, a: 1}
-  Quantity: 5
-  Value: 50
+  HeadAnimatorController: {fileID: 0}
+  OutfitAnimatorController: {fileID: 9100000, guid: 52ca20e335eaa154791db6b431427c6b, type: 2}
+  ShopkeeperSellPrice: 20
+  ShopkeeperBuyPrice: 15

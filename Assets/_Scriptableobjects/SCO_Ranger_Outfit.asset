@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cbfd241cbf4ed342bd849de68ada276, type: 3}
   m_Name: SCO_Ranger_Outfit
   m_EditorClassIdentifier: 
+  Type: 0
   Sprite: {fileID: 21300000, guid: 9a5c88043bb7e4e45ab28affb258a526, type: 3}
-  Color: {r: 1, g: 1, b: 1, a: 1}
-  Quantity: 20
-  Value: 15
+  HeadAnimatorController: {fileID: 0}
+  OutfitAnimatorController: {fileID: 9100000, guid: 98e746db698efd443bff833b01073363, type: 2}
+  ShopkeeperSellPrice: 15
+  ShopkeeperBuyPrice: 10
