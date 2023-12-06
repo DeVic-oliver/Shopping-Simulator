@@ -285,7 +285,7 @@ TextureImporter:
       213: 21300186
     second: RPK - Light & Shadow Half-Tiles_93
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -302,12 +302,11 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMipmapLimit: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -330,7 +329,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -346,8 +345,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
-  swizzle: 50462976
-  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -359,9 +356,8 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -372,9 +368,8 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -385,7 +380,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -398,7 +392,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -411,9 +404,8 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2402,102 +2394,103 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RPK - Light & Shadow Half-Tiles_0: 21300000
-      RPK - Light & Shadow Half-Tiles_1: 21300002
-      RPK - Light & Shadow Half-Tiles_10: 21300020
-      RPK - Light & Shadow Half-Tiles_11: 21300022
-      RPK - Light & Shadow Half-Tiles_12: 21300024
-      RPK - Light & Shadow Half-Tiles_13: 21300026
-      RPK - Light & Shadow Half-Tiles_14: 21300028
-      RPK - Light & Shadow Half-Tiles_15: 21300030
-      RPK - Light & Shadow Half-Tiles_16: 21300032
-      RPK - Light & Shadow Half-Tiles_17: 21300034
-      RPK - Light & Shadow Half-Tiles_18: 21300036
-      RPK - Light & Shadow Half-Tiles_19: 21300038
-      RPK - Light & Shadow Half-Tiles_2: 21300004
-      RPK - Light & Shadow Half-Tiles_20: 21300040
-      RPK - Light & Shadow Half-Tiles_21: 21300042
-      RPK - Light & Shadow Half-Tiles_22: 21300044
-      RPK - Light & Shadow Half-Tiles_23: 21300046
-      RPK - Light & Shadow Half-Tiles_24: 21300048
-      RPK - Light & Shadow Half-Tiles_25: 21300050
-      RPK - Light & Shadow Half-Tiles_26: 21300052
-      RPK - Light & Shadow Half-Tiles_27: 21300054
-      RPK - Light & Shadow Half-Tiles_28: 21300056
-      RPK - Light & Shadow Half-Tiles_29: 21300058
       RPK - Light & Shadow Half-Tiles_3: 21300006
       RPK - Light & Shadow Half-Tiles_30: 21300060
-      RPK - Light & Shadow Half-Tiles_31: 21300062
-      RPK - Light & Shadow Half-Tiles_32: 21300064
-      RPK - Light & Shadow Half-Tiles_33: 21300066
-      RPK - Light & Shadow Half-Tiles_34: 21300068
-      RPK - Light & Shadow Half-Tiles_35: 21300070
-      RPK - Light & Shadow Half-Tiles_36: 21300072
-      RPK - Light & Shadow Half-Tiles_37: 21300074
-      RPK - Light & Shadow Half-Tiles_38: 21300076
-      RPK - Light & Shadow Half-Tiles_39: 21300078
       RPK - Light & Shadow Half-Tiles_4: 21300008
-      RPK - Light & Shadow Half-Tiles_40: 21300080
-      RPK - Light & Shadow Half-Tiles_41: 21300082
-      RPK - Light & Shadow Half-Tiles_42: 21300084
-      RPK - Light & Shadow Half-Tiles_43: 21300086
-      RPK - Light & Shadow Half-Tiles_44: 21300088
-      RPK - Light & Shadow Half-Tiles_45: 21300090
-      RPK - Light & Shadow Half-Tiles_46: 21300092
-      RPK - Light & Shadow Half-Tiles_47: 21300094
-      RPK - Light & Shadow Half-Tiles_48: 21300096
-      RPK - Light & Shadow Half-Tiles_49: 21300098
-      RPK - Light & Shadow Half-Tiles_5: 21300010
-      RPK - Light & Shadow Half-Tiles_50: 21300100
-      RPK - Light & Shadow Half-Tiles_51: 21300102
-      RPK - Light & Shadow Half-Tiles_52: 21300104
       RPK - Light & Shadow Half-Tiles_53: 21300106
-      RPK - Light & Shadow Half-Tiles_54: 21300108
-      RPK - Light & Shadow Half-Tiles_55: 21300110
-      RPK - Light & Shadow Half-Tiles_56: 21300112
-      RPK - Light & Shadow Half-Tiles_57: 21300114
-      RPK - Light & Shadow Half-Tiles_58: 21300116
-      RPK - Light & Shadow Half-Tiles_59: 21300118
-      RPK - Light & Shadow Half-Tiles_6: 21300012
-      RPK - Light & Shadow Half-Tiles_60: 21300120
-      RPK - Light & Shadow Half-Tiles_61: 21300122
-      RPK - Light & Shadow Half-Tiles_62: 21300124
-      RPK - Light & Shadow Half-Tiles_63: 21300126
-      RPK - Light & Shadow Half-Tiles_64: 21300128
-      RPK - Light & Shadow Half-Tiles_65: 21300130
-      RPK - Light & Shadow Half-Tiles_66: 21300132
-      RPK - Light & Shadow Half-Tiles_67: 21300134
-      RPK - Light & Shadow Half-Tiles_68: 21300136
-      RPK - Light & Shadow Half-Tiles_69: 21300138
-      RPK - Light & Shadow Half-Tiles_7: 21300014
-      RPK - Light & Shadow Half-Tiles_70: 21300140
-      RPK - Light & Shadow Half-Tiles_71: 21300142
-      RPK - Light & Shadow Half-Tiles_72: 21300144
-      RPK - Light & Shadow Half-Tiles_73: 21300146
-      RPK - Light & Shadow Half-Tiles_74: 21300148
-      RPK - Light & Shadow Half-Tiles_75: 21300150
       RPK - Light & Shadow Half-Tiles_76: 21300152
-      RPK - Light & Shadow Half-Tiles_77: 21300154
-      RPK - Light & Shadow Half-Tiles_78: 21300156
-      RPK - Light & Shadow Half-Tiles_79: 21300158
-      RPK - Light & Shadow Half-Tiles_8: 21300016
-      RPK - Light & Shadow Half-Tiles_80: 21300160
-      RPK - Light & Shadow Half-Tiles_81: 21300162
       RPK - Light & Shadow Half-Tiles_82: 21300164
-      RPK - Light & Shadow Half-Tiles_83: 21300166
-      RPK - Light & Shadow Half-Tiles_84: 21300168
-      RPK - Light & Shadow Half-Tiles_85: 21300170
       RPK - Light & Shadow Half-Tiles_86: 21300172
+      RPK - Light & Shadow Half-Tiles_33: 21300066
+      RPK - Light & Shadow Half-Tiles_47: 21300094
+      RPK - Light & Shadow Half-Tiles_39: 21300078
       RPK - Light & Shadow Half-Tiles_87: 21300174
-      RPK - Light & Shadow Half-Tiles_88: 21300176
+      RPK - Light & Shadow Half-Tiles_29: 21300058
+      RPK - Light & Shadow Half-Tiles_16: 21300032
+      RPK - Light & Shadow Half-Tiles_6: 21300012
+      RPK - Light & Shadow Half-Tiles_68: 21300136
+      RPK - Light & Shadow Half-Tiles_1: 21300002
+      RPK - Light & Shadow Half-Tiles_28: 21300056
+      RPK - Light & Shadow Half-Tiles_74: 21300148
+      RPK - Light & Shadow Half-Tiles_21: 21300042
+      RPK - Light & Shadow Half-Tiles_37: 21300074
+      RPK - Light & Shadow Half-Tiles_23: 21300046
+      RPK - Light & Shadow Half-Tiles_42: 21300084
+      RPK - Light & Shadow Half-Tiles_79: 21300158
+      RPK - Light & Shadow Half-Tiles_40: 21300080
+      RPK - Light & Shadow Half-Tiles_62: 21300124
+      RPK - Light & Shadow Half-Tiles_66: 21300132
       RPK - Light & Shadow Half-Tiles_89: 21300178
+      RPK - Light & Shadow Half-Tiles_51: 21300102
+      RPK - Light & Shadow Half-Tiles_93: 21300186
+      RPK - Light & Shadow Half-Tiles_14: 21300028
+      RPK - Light & Shadow Half-Tiles_41: 21300082
+      RPK - Light & Shadow Half-Tiles_88: 21300176
+      RPK - Light & Shadow Half-Tiles_38: 21300076
+      RPK - Light & Shadow Half-Tiles_57: 21300114
+      RPK - Light & Shadow Half-Tiles_20: 21300040
+      RPK - Light & Shadow Half-Tiles_75: 21300150
+      RPK - Light & Shadow Half-Tiles_84: 21300168
+      RPK - Light & Shadow Half-Tiles_67: 21300134
+      RPK - Light & Shadow Half-Tiles_56: 21300112
+      RPK - Light & Shadow Half-Tiles_35: 21300070
+      RPK - Light & Shadow Half-Tiles_65: 21300130
+      RPK - Light & Shadow Half-Tiles_64: 21300128
+      RPK - Light & Shadow Half-Tiles_60: 21300120
+      RPK - Light & Shadow Half-Tiles_70: 21300140
+      RPK - Light & Shadow Half-Tiles_58: 21300116
+      RPK - Light & Shadow Half-Tiles_44: 21300088
+      RPK - Light & Shadow Half-Tiles_19: 21300038
+      RPK - Light & Shadow Half-Tiles_69: 21300138
+      RPK - Light & Shadow Half-Tiles_31: 21300062
+      RPK - Light & Shadow Half-Tiles_2: 21300004
+      RPK - Light & Shadow Half-Tiles_25: 21300050
+      RPK - Light & Shadow Half-Tiles_77: 21300154
+      RPK - Light & Shadow Half-Tiles_12: 21300024
+      RPK - Light & Shadow Half-Tiles_34: 21300068
+      RPK - Light & Shadow Half-Tiles_43: 21300086
+      RPK - Light & Shadow Half-Tiles_52: 21300104
+      RPK - Light & Shadow Half-Tiles_83: 21300166
+      RPK - Light & Shadow Half-Tiles_55: 21300110
+      RPK - Light & Shadow Half-Tiles_10: 21300020
+      RPK - Light & Shadow Half-Tiles_32: 21300064
+      RPK - Light & Shadow Half-Tiles_50: 21300100
+      RPK - Light & Shadow Half-Tiles_85: 21300170
+      RPK - Light & Shadow Half-Tiles_45: 21300090
+      RPK - Light & Shadow Half-Tiles_22: 21300044
+      RPK - Light & Shadow Half-Tiles_17: 21300034
+      RPK - Light & Shadow Half-Tiles_27: 21300054
+      RPK - Light & Shadow Half-Tiles_73: 21300146
+      RPK - Light & Shadow Half-Tiles_63: 21300126
+      RPK - Light & Shadow Half-Tiles_7: 21300014
+      RPK - Light & Shadow Half-Tiles_78: 21300156
+      RPK - Light & Shadow Half-Tiles_81: 21300162
+      RPK - Light & Shadow Half-Tiles_48: 21300096
+      RPK - Light & Shadow Half-Tiles_54: 21300108
+      RPK - Light & Shadow Half-Tiles_71: 21300142
       RPK - Light & Shadow Half-Tiles_9: 21300018
+      RPK - Light & Shadow Half-Tiles_26: 21300052
+      RPK - Light & Shadow Half-Tiles_46: 21300092
+      RPK - Light & Shadow Half-Tiles_72: 21300144
+      RPK - Light & Shadow Half-Tiles_80: 21300160
+      RPK - Light & Shadow Half-Tiles_13: 21300026
       RPK - Light & Shadow Half-Tiles_90: 21300180
+      RPK - Light & Shadow Half-Tiles_61: 21300122
+      RPK - Light & Shadow Half-Tiles_59: 21300118
+      RPK - Light & Shadow Half-Tiles_5: 21300010
+      RPK - Light & Shadow Half-Tiles_49: 21300098
+      RPK - Light & Shadow Half-Tiles_24: 21300048
+      RPK - Light & Shadow Half-Tiles_15: 21300030
+      RPK - Light & Shadow Half-Tiles_36: 21300072
+      RPK - Light & Shadow Half-Tiles_18: 21300036
       RPK - Light & Shadow Half-Tiles_91: 21300182
       RPK - Light & Shadow Half-Tiles_92: 21300184
-      RPK - Light & Shadow Half-Tiles_93: 21300186
-  mipmapLimitGroupName: 
+      RPK - Light & Shadow Half-Tiles_11: 21300022
+      RPK - Light & Shadow Half-Tiles_0: 21300000
+      RPK - Light & Shadow Half-Tiles_8: 21300016
+  spritePackingTag: 
   pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
