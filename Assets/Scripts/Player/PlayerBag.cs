@@ -1,7 +1,7 @@
 ﻿namespace Assets.Scripts.Player
 {
     using Assets.Scripts.ScriptableObjects;
-    using System.Collections.Generic;
+    using TMPro;
     using UnityEngine;
 
     [RequireComponent(typeof(PlayerItemEquipGateway))]    
@@ -14,6 +14,8 @@
         [SerializeField] private GameObject _playerItemPrefab;
 
 
+        [Header("UI Settings")]
+        [SerializeField] private TextMeshProUGUI _playerMoney;
         [SerializeField] private GameObject _playerUIBagsObject;
 
 
@@ -61,6 +63,11 @@
         {
             PlayerMoney = _money;
             _playerEquipGateway = GetComponent<PlayerItemEquipGateway>();
+        }
+
+        private void Update()
+        {
+            _playerMoney.text = PlayerMoney.ToString();
         }
     }
 }
