@@ -47,21 +47,15 @@
         private void IterateThroughItemsListThenSetSellEvent()
         {
             foreach (var item in _itemsInBag)
-            {
-                Button button = item.Value.GetComponent<Button>();
-                PlayerBagItem bagItem = item.Value.GetComponent<PlayerBagItem>();
-                button.onClick.RemoveAllListeners();
-                button.onClick.AddListener(bagItem.SellItemToShopKeeper);
-            }
+                SetItemSetSellEvent(item.Value);
         }
 
         private void IterateThroughItemsListThenSetEquipEvent()
         {
             foreach (var item in _itemsInBag)
             {
-                Button button = item.Value.GetComponent<Button>();
+                Button button = RemoveButtonAllListenersAndGetIt(item.Value);
                 PlayerBagItem bagItem = item.Value.GetComponent<PlayerBagItem>();
-                button.onClick.RemoveAllListeners();
                 button.onClick.AddListener(bagItem.EquipItem);
             }
         }
@@ -92,7 +86,24 @@
         private void PopulateUIBagsWithObjects()
         {
             GameObject obj = Instantiate(_playerItemPrefab, _playerUIBagsObject.transform);
+
+            SetItemSetSellEvent(obj);
+
             _itemsInBag.Add(obj.GetInstanceID(), obj);
+        }
+
+        private void SetItemSetSellEvent(GameObject obj)
+        {
+            Button button = RemoveButtonAllListenersAndGetIt(obj);
+            PlayerBagItem bagItem = obj.GetComponent<PlayerBagItem>();
+            button.onClick.AddListener(bagItem.SellItemToShopKeeper);
+        }
+
+        private Button RemoveButtonAllListenersAndGetIt(GameObject obj)
+        {
+            Button button = obj.GetComponent<Button>();
+            button.onClick.RemoveAllListeners();
+            return button;
         }
 
         private PlayerBagItem GetPlayerItemComponent()
