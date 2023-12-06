@@ -8,12 +8,19 @@
     public class PlayerBag : MonoBehaviour
     {
         public static int PlayerMoney { get; private set; }
+        public static bool IsShopping { get; private set; }
 
         [SerializeField] private int _money = 200;
         [SerializeField] private GameObject _playerItemPrefab;
         [SerializeField] private List<GameObject> _playerUIBagsObject;
 
         private PlayerItemEquipGateway _playerEquipGateway;
+
+        
+        public void SetIsShopping(bool value)
+        {
+            IsShopping = value;
+        }
 
 
         public void InsertItemIntoBag(SCO_Item itemData)
