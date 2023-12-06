@@ -4,16 +4,16 @@
     
     public class ActiveStatusToggler : MonoBehaviour
     {
-        [SerializeField] private KeyCode _actionKey;
-        [SerializeField] private GameObject _gameObjectToToggle;
+        [SerializeField] protected KeyCode _actionKey;
+        [SerializeField] protected GameObject _gameObjectToToggle;
 
-        void Update()
+        protected virtual void Update()
         {
             if (Input.GetKeyDown(_actionKey))
                 ToggleGameObjectActiveStatus();
         }
 
-        private void ToggleGameObjectActiveStatus()
+        protected virtual void ToggleGameObjectActiveStatus()
         {
             bool newActiveStatus = !_gameObjectToToggle.activeSelf;
             _gameObjectToToggle.SetActive(newActiveStatus);
