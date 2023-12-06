@@ -1,7 +1,7 @@
 ﻿namespace Assets.Scripts.Player
 {
     using Assets.Scripts.Core.Item;
-    
+
     public class PlayerBagItem : Item
     {
         public PlayerItemEquipGateway EquipGateway;

@@ -3909,6 +3909,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a500ba4d6e903408f79b7a184618e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnItemRemovedFromBag:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 875638795}
+        m_TargetAssemblyTypeName: Assets.Scripts.Player.PlayerItemEquipGateway, Assembly-CSharp
+        m_MethodName: UnequipItem
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _money: 100
   _playerItemPrefab: {fileID: 5993894432814924471, guid: b69a93f8e973d4247aa82b2b4a82d89c, type: 3}
   _playerMoney: {fileID: 868586405}
