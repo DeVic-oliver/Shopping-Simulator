@@ -12,7 +12,10 @@
 
         [SerializeField] private int _money = 200;
         [SerializeField] private GameObject _playerItemPrefab;
-        [SerializeField] private List<GameObject> _playerUIBagsObject;
+
+
+        [SerializeField] private GameObject _playerUIBagsObject;
+
 
         private PlayerItemEquipGateway _playerEquipGateway;
 
@@ -46,8 +49,7 @@
 
         private void PopulateUIBagsWithObjects()
         {
-            foreach (GameObject uiBags in _playerUIBagsObject)
-                Instantiate(_playerItemPrefab, uiBags.transform);
+            Instantiate(_playerItemPrefab, _playerUIBagsObject.transform);
         }
 
         private PlayerBagItem GetPlayerItemComponent()
