@@ -36,9 +36,7 @@ namespace Assets.Scripts.Player
 
         private void SetPositionByAxis()
         {
-            float x = GetMovespeedTimesDeltaTime() * HorizontalAxisValue;
-            float y = GetMovespeedTimesDeltaTime() * VerticalAxisValue;
-            _position = transform.position + new Vector3(x, y, 0);
+            _position = transform.position + (new Vector3(HorizontalAxisValue, VerticalAxisValue, 0) * GetMovespeedTimesDeltaTime());
         }
 
         private float GetMovespeedTimesDeltaTime()
