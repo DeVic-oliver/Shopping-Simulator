@@ -31,12 +31,13 @@
 
         public void UnequipItem(SCO_Item ItemData)
         {
-            if (IsItemHeadType(ItemData))
+            if (IsItemHeadType(ItemData) && _headController.runtimeAnimatorController == ItemData.HeadAnimatorController)
             {
                 _headController.runtimeAnimatorController = null;
                 _head.SetActive(false);
             }
-            else
+            
+            if(!IsItemHeadType(ItemData) && _outfitController.runtimeAnimatorController == ItemData.OutfitAnimatorController)
             {
                 _outfitController.runtimeAnimatorController = null;
                 _outfit.SetActive(false);
