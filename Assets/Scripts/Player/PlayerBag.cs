@@ -26,6 +26,37 @@
         public void SetIsShopping(bool value)
         {
             IsShopping = value;
+
+            if(IsShopping)
+            {
+                IterateThroughItemsListThenSetSellEvent();
+            }
+            else
+            {
+                IterateThroughItemsListThenSetEquipEvent();
+            }
+        }
+
+        private void IterateThroughItemsListThenSetSellEvent()
+        {
+            foreach (var item in _itemsInBag)
+            {
+                Button button = item.Value.GetComponent<Button>();
+                PlayerBagItem bagItem = item.Value.GetComponent<PlayerBagItem>();
+                button.onClick.RemoveAllListeners();
+                button.onClick.AddListener(bagItem.SellItemToShopKeeper);
+            }
+        }
+
+        private void IterateThroughItemsListThenSetEquipEvent()
+        {
+            foreach (var item in _itemsInBag)
+            {
+                Button button = item.Value.GetComponent<Button>();
+                PlayerBagItem bagItem = item.Value.GetComponent<PlayerBagItem>();
+                button.onClick.RemoveAllListeners();
+                button.onClick.AddListener(bagItem.EquipItem);
+            }
         }
 
         public void IncreasePlayerMoneyByItemSellPrice(float price)
