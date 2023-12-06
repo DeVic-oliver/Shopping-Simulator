@@ -10,7 +10,9 @@
 
         public void SellItemToShopKeeper()
         {
-
+            ThePlayerBag.DeleteItemFromList(gameObject.GetInstanceID());
+            ThePlayerBag.IncreasePlayerMoneyByItemSellPrice(ItemData.ShopkeeperBuyPrice);
+            Destroy(gameObject);
         }
 
         public void EquipItem()
