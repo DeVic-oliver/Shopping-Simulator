@@ -5,6 +5,7 @@
     public class PlayerBagItem : Item
     {
         public PlayerItemEquipGateway EquipGateway;
+        public PlayerBag ThePlayerBag;
 
 
         public void SellItemToShopKeeper()

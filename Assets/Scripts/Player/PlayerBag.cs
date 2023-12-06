@@ -23,6 +23,11 @@
         private Dictionary<int, GameObject> _itemsInBag = new();
 
         
+        public void DeleteItemFromList(int instanceID)
+        {
+            _itemsInBag.Remove(instanceID);
+        }
+
         public void SetIsShopping(bool value)
         {
             IsShopping = value;
@@ -78,6 +83,7 @@
         private void InjectComponents(SCO_Item itemData)
         {
             GetPlayerItemComponent().ItemData = itemData;
+            GetPlayerItemComponent().ThePlayerBag = this;
             GetPlayerItemComponent().EquipGateway = _playerEquipGateway;
         }
 
