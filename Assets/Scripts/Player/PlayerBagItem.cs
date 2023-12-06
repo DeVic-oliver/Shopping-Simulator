@@ -1,13 +1,16 @@
 ﻿namespace Assets.Scripts.Player
 {
     using Assets.Scripts.Core.Item;
-    using UnityEditor.Animations;
-    using UnityEngine;
     
     public class PlayerBagItem : Item
     {
         public PlayerItemEquipGateway EquipGateway;
-      
+
+
+        public void SellItemToShopKeeper()
+        {
+
+        }
 
         public void EquipItem()
         {

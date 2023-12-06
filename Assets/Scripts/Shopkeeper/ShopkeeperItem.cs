@@ -4,6 +4,7 @@
     
     public class ShopkeeperItem : Item
     {
+
         void Start()
         {
             SetPrice();
