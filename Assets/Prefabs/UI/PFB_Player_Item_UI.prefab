@@ -33,6 +33,7 @@ RectTransform:
   m_Children:
   - {fileID: 1935309519411467995}
   m_Father: {fileID: 6460735952119540094}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -164,6 +165,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7051026118812922491}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -272,16 +274,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 546226615648682352, guid: a8c70c38bb55abe49bb9d0dd90190a3c, type: 3}
       propertyPath: m_Name
-      value: PFB_Player_Item_UI Variant
+      value: PFB_Player_Item_UI
       objectReference: {fileID: 0}
     - target: {fileID: 865076340826146972, guid: a8c70c38bb55abe49bb9d0dd90190a3c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 865076340826146972, guid: a8c70c38bb55abe49bb9d0dd90190a3c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -416,15 +417,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 942136408860306105, guid: a8c70c38bb55abe49bb9d0dd90190a3c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7051026118812922491}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 546226615648682352, guid: a8c70c38bb55abe49bb9d0dd90190a3c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8753030433207991187}
   m_SourcePrefab: {fileID: 100100000, guid: a8c70c38bb55abe49bb9d0dd90190a3c, type: 3}
 --- !u!114 &930038489373963678 stripped
 MonoBehaviour:
