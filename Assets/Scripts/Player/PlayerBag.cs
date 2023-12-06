@@ -1,14 +1,19 @@
 ﻿namespace Assets.Scripts.Player
 {
     using Assets.Scripts.ScriptableObjects;
+    using System.Collections.Generic;
     using TMPro;
     using UnityEngine;
+    using UnityEngine.Events;
+    using UnityEngine.UI;
 
     [RequireComponent(typeof(PlayerItemEquipGateway))]    
     public class PlayerBag : MonoBehaviour
     {
         public static float PlayerMoney { get; private set; }
         public static bool IsShopping { get; private set; }
+
+        public UnityEvent<SCO_Item> OnItemRemovedFromBag;
 
         [SerializeField] private int _money = 200;
         [SerializeField] private GameObject _playerItemPrefab;
@@ -20,11 +25,46 @@
 
 
         private PlayerItemEquipGateway _playerEquipGateway;
+        private Dictionary<int, GameObject> _itemsInBag = new();
 
         
+        public void DeleteItemFromList(int instanceID)
+        {
+            GameObject obj = _itemsInBag[instanceID];
+            SCO_Item data = obj.GetComponent<PlayerBagItem>().ItemData;
+            OnItemRemovedFromBag?.Invoke(data);
+
+            _itemsInBag.Remove(instanceID);
+        }
+
         public void SetIsShopping(bool value)
         {
             IsShopping = value;
+
+            if(IsShopping)
+            {
+                IterateThroughItemsListThenSetSellEvent();
+            }
+            else
+            {
+                IterateThroughItemsListThenSetEquipEvent();
+            }
+        }
+
+        private void IterateThroughItemsListThenSetSellEvent()
+        {
+            foreach (var item in _itemsInBag)
+                SetItemSetSellEvent(item.Value);
+        }
+
+        private void IterateThroughItemsListThenSetEquipEvent()
+        {
+            foreach (var item in _itemsInBag)
+            {
+                Button button = RemoveButtonAllListenersAndGetIt(item.Value);
+                PlayerBagItem bagItem = item.Value.GetComponent<PlayerBagItem>();
+                button.onClick.AddListener(bagItem.EquipItem);
+            }
         }
 
         public void IncreasePlayerMoneyByItemSellPrice(float price)
@@ -46,12 +86,31 @@
         private void InjectComponents(SCO_Item itemData)
         {
             GetPlayerItemComponent().ItemData = itemData;
+            GetPlayerItemComponent().ThePlayerBag = this;
             GetPlayerItemComponent().EquipGateway = _playerEquipGateway;
         }
 
         private void PopulateUIBagsWithObjects()
         {
-            Instantiate(_playerItemPrefab, _playerUIBagsObject.transform);
+            GameObject obj = Instantiate(_playerItemPrefab, _playerUIBagsObject.transform);
+
+            SetItemSetSellEvent(obj);
+
+            _itemsInBag.Add(obj.GetInstanceID(), obj);
+        }
+
+        private void SetItemSetSellEvent(GameObject obj)
+        {
+            Button button = RemoveButtonAllListenersAndGetIt(obj);
+            PlayerBagItem bagItem = obj.GetComponent<PlayerBagItem>();
+            button.onClick.AddListener(bagItem.SellItemToShopKeeper);
+        }
+
+        private Button RemoveButtonAllListenersAndGetIt(GameObject obj)
+        {
+            Button button = obj.GetComponent<Button>();
+            button.onClick.RemoveAllListeners();
+            return button;
         }
 
         private PlayerBagItem GetPlayerItemComponent()
