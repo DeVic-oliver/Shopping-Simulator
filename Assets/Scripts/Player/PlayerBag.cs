@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using TMPro;
     using UnityEngine;
+    using UnityEngine.Events;
     using UnityEngine.UI;
 
     [RequireComponent(typeof(PlayerItemEquipGateway))]    
@@ -11,6 +12,8 @@
     {
         public static float PlayerMoney { get; private set; }
         public static bool IsShopping { get; private set; }
+
+        public UnityEvent<SCO_Item> OnItemRemovedFromBag;
 
         [SerializeField] private int _money = 200;
         [SerializeField] private GameObject _playerItemPrefab;
@@ -27,6 +30,10 @@
         
         public void DeleteItemFromList(int instanceID)
         {
+            GameObject obj = _itemsInBag[instanceID];
+            SCO_Item data = obj.GetComponent<PlayerBagItem>().ItemData;
+            OnItemRemovedFromBag?.Invoke(data);
+
             _itemsInBag.Remove(instanceID);
         }
 
