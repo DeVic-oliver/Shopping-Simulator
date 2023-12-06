@@ -20,6 +20,7 @@
 
 
         private PlayerItemEquipGateway _playerEquipGateway;
+        private Dictionary<int, GameObject> _itemsInBag = new();
 
         
         public void SetIsShopping(bool value)
@@ -51,7 +52,8 @@
 
         private void PopulateUIBagsWithObjects()
         {
-            Instantiate(_playerItemPrefab, _playerUIBagsObject.transform);
+            GameObject obj = Instantiate(_playerItemPrefab, _playerUIBagsObject.transform);
+            _itemsInBag.Add(obj.GetInstanceID(), obj);
         }
 
         private PlayerBagItem GetPlayerItemComponent()
